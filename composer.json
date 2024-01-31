@@ -1,0 +1,16 @@
+{
+    "name": "atxy2k/framework",
+    "description": "My owm framework",
+    "authors": [
+        {
+            "name": "Ivan Alvarado",
+            "email": "ivan.alvarado@serprogramador.es"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Atxy2k\\": "src/"
+        }
+    }
+}
