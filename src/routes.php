@@ -1,8 +1,10 @@
 <?php 
 
 use Atxy2k\Infrastructure\Router;
-use Atxy2k\Controllers\UsersController;
+use Atxy2k\Controllers\TodosController;
+use Atxy2k\Controllers\MainController;
 
 $router = new Router();
 
-$router->addRoute('/', UsersController::class, 'index');
+$router->addRoute('/', MainController::class, 'index');
+$router->addRoute('/todo-list/index', TodosController::class,'index');
