@@ -6,9 +6,6 @@ use Atxy2k\Models\Todo;
 class TodosController extends BaseController {
 
     public function index(){
-        #$todo = new Todo('My second title', 'long description');
-        #$todo->save();
-        #$todo = (new Todo())->find(1);
         $todos = (new Todo())->all();
         return $this->render('todos\\index', compact('todos'));
     }
