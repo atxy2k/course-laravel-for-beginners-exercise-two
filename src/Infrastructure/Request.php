@@ -6,7 +6,7 @@ class Request {
 
     public function __construct()
     {
-        $this->params = array_combine($_GET, $_POST);
+        $this->params = $_GET + $_POST;
     }
 
     public function all() : array {

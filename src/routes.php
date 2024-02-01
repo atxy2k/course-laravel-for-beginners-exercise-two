@@ -8,3 +8,5 @@ $router = new Router();
 
 $router->addRoute('/', MainController::class, 'index');
 $router->addRoute('/todo-list/index', TodosController::class,'index');
+$router->addRoute('/todo-list/add', TodosController::class,'add');
+$router->addRoute('/todo-list/store', TodosController::class,'store');
